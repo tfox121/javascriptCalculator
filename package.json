@@ -1,0 +1,24 @@
+{
+  "name": "javascriptcalculator",
+  "version": "1.0.0",
+  "description": "See it in action [here](https://tfox121.github.io/javascriptCalculator/)!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tfox121/javascriptCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tfox121/javascriptCalculator/issues"
+  },
+  "homepage": "https://github.com/tfox121/javascriptCalculator#readme",
+  "dependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-vue": "^5.2.3"
+  }
+}

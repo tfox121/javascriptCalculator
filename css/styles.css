@@ -1,0 +1,104 @@
+body {
+    font-size: 1.5em;
+}
+
+#calculator {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 1%;
+    width: 15em;
+    height: 18em;
+}
+
+#display {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    justify-self: stretch;
+    align-self: stretch;
+    min-height: 2em;
+}
+
+#log {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 50%;
+    font-size: 0.8em;
+    bottom: 50%
+    
+}
+
+#current {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    min-height: 50%;
+    font-size: 1em;
+    top: 50%
+}
+
+#clear {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    background-color: darkred;
+}
+
+#divide {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#multiply {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+#seven, #eight, #nine, #subtract {
+    grid-row: 3 / 4;
+}
+
+#four, #five, #six, #add {
+    grid-row: 4 / 5;
+}
+
+#one, #two, #three {
+    grid-row: 5 / 6;
+}
+
+#zero, #decimal {
+    grid-row: 6 / 7;
+}
+
+#zero {
+    grid-column: 1 / 3;
+}
+
+#equals {
+    grid-column: 4 / 5;
+    grid-row: 5 / 7;
+    background-color: rgb(0, 80, 80);
+}
+
+div > button {
+    justify-self: stretch;
+    align-self: stretch;
+    border: 0.01em solid white;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #decimal {
+    background-color: lightslategray;
+}
+
+#divide, #multiply, #subtract, #add {
+    background-color: rgb(83, 97, 110);
+}
