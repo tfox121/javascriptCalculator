@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/tfox121/javascriptCalculator/static/js/main.d5556e7c.chunk.js",
+    "main.js.map": "/tfox121/javascriptCalculator/static/js/main.d5556e7c.chunk.js.map",
+    "runtime~main.js": "/tfox121/javascriptCalculator/static/js/runtime~main.29130500.js",
+    "runtime~main.js.map": "/tfox121/javascriptCalculator/static/js/runtime~main.29130500.js.map",
+    "index.html": "/tfox121/javascriptCalculator/index.html",
+    "precache-manifest.17d34fca8fefeccff4821feecf7ccc89.js": "/tfox121/javascriptCalculator/precache-manifest.17d34fca8fefeccff4821feecf7ccc89.js",
+    "service-worker.js": "/tfox121/javascriptCalculator/service-worker.js"
+  }
+}

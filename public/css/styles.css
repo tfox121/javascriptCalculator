@@ -1,50 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 body {
     font-size: 1.5em;
 }
 
 #calculator {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
-    justify-items: center;
-    align-items: center;
-    padding: 1%;
-    width: 15em;
-    height: 18em;
+    grid-template-columns: 3.3em 3.3em 3.3em 3.3em;
+    grid-template-rows: auto 2.5em 2.5em 2.5em 2.5em 2.5em;
+    padding: 0.2em;
 }
 
-#display {
+#screen {
     display: flex;
-    position: relative;
     flex-direction: column;
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     justify-self: stretch;
     align-self: stretch;
-    min-height: 2em;
+    justify-content: flex-end;
+    font-family: "Orbitron";
 }
 
 #log {
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-    min-height: 50%;
-    font-size: 0.8em;
-    bottom: 50%
-    
+    text-align: end;
+    vertical-align: bottom;
+    max-width: 100%;
+    font-size: 0.7em;
+    bottom: 50%;
+    overflow-wrap: break-word;
+    min-height: 1.5em;
 }
 
-#current {
-    position: absolute;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 100%;
-    min-height: 50%;
+#display {
+    text-align: end;
+    vertical-align: bottom;
+    max-width: 100%;
     font-size: 1em;
-    top: 50%
+    bottom: 50%;
+    overflow-wrap: break-word;
 }
 
 #clear {
@@ -92,7 +86,7 @@ body {
 div > button {
     justify-self: stretch;
     align-self: stretch;
-    border: 0.01em solid white;
+    border: 0.02px solid white;
 }
 
 #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #decimal {
@@ -101,4 +95,9 @@ div > button {
 
 #divide, #multiply, #subtract, #add {
     background-color: rgb(83, 97, 110);
+}
+
+.post {
+    color: white;
+    font-size: 0.5em;
 }
