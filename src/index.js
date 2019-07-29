@@ -17,9 +17,7 @@ class Calculator extends React.Component {
         };
         this.clicked = this.clicked.bind(this)
         this.calculate = this.calculate.bind(this)
-        this.endLog = this.endLog.bind(this)
         this.swapState = this.swapState.bind(this)
-        this.startLog = this.startLog.bind(this)
         this.operatorSet = this.operatorSet.bind(this)
         this.operatorReset = this.operatorReset.bind(this)
     }
@@ -243,7 +241,7 @@ class Calculator extends React.Component {
                 <div className="bg-light" id="calculator">
                     <div id="screen">
                         <div className="" id="log">{this.state.log + (this.state.current !== 0 && this.state.current !== "0" ? this.state.current : "").toString().toUpperCase()}</div>
-                        <div className="" id="display">{isNaN(this.state.current) ? this.state.current : Number(this.state.current).round(12)}</div>
+                        <div className="" id="display">{!this.equals ? this.state.current : Number(this.state.current).round(12)}</div>
                     </div>
                     <button id="equals" onClick={this.clicked}>=</button>
                     <button id="zero" onClick={this.clicked}>0</button>
