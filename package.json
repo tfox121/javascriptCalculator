@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/tfox121/javascriptCalculator#readme",
   "dependencies": {
-    "babel-eslint": "^10.0.2",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-vue": "^5.2.3",
     "react": "^16.8.6",
